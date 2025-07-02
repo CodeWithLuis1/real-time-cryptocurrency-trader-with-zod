@@ -1,0 +1,31 @@
+.form, .field{
+ display: flex;
+ flex-direction: column;
+ gap: 2rem;   
+}
+.label{
+    color:var(--black)
+}
+.select{
+    background-color: #ECEBEB;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+}
+.submit{
+    background-color: var(--primary);
+    color: var(--black);
+    border: none;
+    padding: 1rem;
+    font-weight: 900;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    transition: background-color 300ms ease;
+}
+.submit:hover{
+    background-color: #1b9c85;
+}
