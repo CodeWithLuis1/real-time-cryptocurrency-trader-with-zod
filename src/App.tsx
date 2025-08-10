@@ -1,7 +1,13 @@
+import { useEffect } from "react";
 import styles from "./App.module.css";
 import CriptoSearchForm from "./components/CriptoForm/CriptoSearchForm";
+import { useCryptoStore } from "./store";
 
 function App() {
+  const fetchCryptos = useCryptoStore ((state)=> state.fechCryptos)
+  useEffect(()=>{
+    fetchCryptos()
+  },[])
   return (
     <div className="container">
       <h1 className={styles.appTitle}>
@@ -14,3 +20,5 @@ function App() {
   );
 }
 export default App;
+
+
